@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NumberSquare from './NumberSquare';
 
 class App extends Component {
+  handleClick(i){
+    console.log("this is button value: " + i);
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <NumberSquare number={1} onClick={(i) => this.handleClick(1)} />
+        <NumberSquare number={2} onClick={(i) => this.handleClick(2)} />
+        <NumberSquare number={3} onClick={(i) => this.handleClick(3)} />
       </div>
     );
   }
