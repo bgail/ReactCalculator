@@ -21,12 +21,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="d-flex justify-content-center">
-      <div className="d-flex flex-row"> 
-        <NumberSquare className="p-2" number={1} onClick={(i) => this.handleClick(1)} />
-        <NumberSquare className="p-2" number={2} onClick={(i) => this.handleClick(2)} />
-        <NumberSquare className="p-2" number={3} onClick={(i) => this.handleClick(3)} />
-        <NumberSquare className="p-2" number={3} onClick={(i) => this.handleClick2()} />
+      <div className="container">
+      <div className="text-center"> 
+        <div className="screen">ABC</div>
+        <NumberSquare number={1} onClick={(i) => this.handleClick(1)} />
+        <NumberSquare number={2} onClick={(i) => this.handleClick(2)} />
+        <NumberSquare number={3} onClick={(i) => this.handleClick(3)} />
+        <NumberSquare number={3} onClick={(i) => this.handleClick2()} />
       </div>
       </div>
     );
