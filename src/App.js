@@ -21,10 +21,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="container">
+      <div className="container App">
       <div className="text-center"> 
-        <div className="screen">ABC</div>
-        <NumberSquare number={1} onClick={(i) => this.handleClick(1)} />
+        <div className="screen">{this.state.expression}</div>
+        <NumberSquare number={1} onClick={(i) => this.handleClick(1)} styles='num-btn-square bg-dark-gray' />
         <NumberSquare number={2} onClick={(i) => this.handleClick(2)} />
         <NumberSquare number={3} onClick={(i) => this.handleClick(3)} />
         <NumberSquare number={3} onClick={(i) => this.handleClick2()} />
