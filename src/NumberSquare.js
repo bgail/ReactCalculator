@@ -3,7 +3,7 @@ import React from 'react';
 function NumberSquare(props) {
     return (
         <button
-            className='num-btn-square'
+            className={`${props.styles}` }
             onClick={props.onClick}
         >
         {props.number}
