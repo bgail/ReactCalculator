@@ -26,10 +26,25 @@ class App extends Component {
           <div className="screen">
             <div className="">{this.state.expression}</div>
           </div>
-          <NumberSquare number={1} onClick={(i) => this.handleClick(1)} styles='num-btn-square bg-dark-gray' />
-          <NumberSquare number={2} onClick={(i) => this.handleClick(2)} styles='num-btn-square bg-dark-gray' />
-          <NumberSquare number={3} onClick={(i) => this.handleClick(3)} styles='num-btn-square bg-dark-gray' />
-          <NumberSquare number={3} onClick={(i) => this.handleClick2()} styles='num-btn-square bg-dark-gray' />
+          <div className="row">
+            <NumberSquare number={1} onClick={(i) => this.handleClick(1)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={2} onClick={(i) => this.handleClick(2)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={3} onClick={(i) => this.handleClick(3)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={3} onClick={(i) => this.handleClick2()} styles='num-btn-square bg-dark-gray' />
+          </div>
+          <div className="row">
+            <NumberSquare number={1} onClick={(i) => this.handleClick(1)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={2} onClick={(i) => this.handleClick(2)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={3} onClick={(i) => this.handleClick(3)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={3} onClick={(i) => this.handleClick2()} styles='num-btn-square bg-dark-gray' />
+          </div>
+          <div className="row">
+            <NumberSquare number={1} onClick={(i) => this.handleClick(1)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={2} onClick={(i) => this.handleClick(2)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={3} onClick={(i) => this.handleClick(3)} styles='num-btn-square bg-dark-gray' />
+            <NumberSquare number={3} onClick={(i) => this.handleClick2()} styles='num-btn-square bg-dark-gray' />
+          </div>
+          
         </div>
       </div>
     );
